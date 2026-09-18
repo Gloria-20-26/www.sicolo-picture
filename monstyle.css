@@ -287,30 +287,45 @@ nav a.active{
 @media (max-width: 768px){
     header{
         height: auto;
-        min-height: 75px;
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
+        min-height: 120px;
+        padding: 8px 10px;
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        align-items: center;
+        
     }
     .logo{
-        flex: 1;
-        min-width: 100px;
+        flex: none;
+        grid-row: span 2;
     }
     .logo img{
+        position: relative;
         width: 100px;
         height: auto;
-        left: 5px;
-        top: 3px;
+        left: 0;
+        top: 0;
     }
     nav{
-        flex: 1;
+        flex: none;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 15px;
     }
     nav a {
-        margin: 5px 8px;
-        font-size: 13px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .right{
+        flex: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .btn-contact{
+        padding: 7px 15px;
+        font-size: 14px;
     }
     .hero{
         height: 75vh;
@@ -329,7 +344,7 @@ nav a.active{
     }
     .hero p{
         font-size: 15px;
-        margin-bottom: 20px;
+        line-height: 1.5;
     }
     .btn{
         padding: 10px 18px;
