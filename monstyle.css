@@ -284,6 +284,35 @@ nav a.active{
     color: #bbbbbb;
     font-size: 13px;
 }
+@media (max-width: 768px){
+    header{
+        height: auto;
+        min-height: 75px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo{
+        flex: 1;
+        min-width: 100px;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+        left: 5px;
+        top: 3px;
+    }
+    nav{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav a {
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+}
 
 
 
