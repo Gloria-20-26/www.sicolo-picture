@@ -367,7 +367,14 @@ nav a.active{
     height: 3px;
     background: white;
     margin: 5px 0;
-}   
+} 
+.mobile-menu{
+    display: none;
+}  
+.mobile-menu.active{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 768px){
     html,body{
         overflow-x: hidden;
@@ -377,7 +384,8 @@ nav a.active{
         padding: 0;
     }
     .menu-btn{
-        display: block;
+        font-size: 35px;
+        margin: 0;
     }
     nav{
         display: none;
@@ -403,12 +411,15 @@ nav a.active{
     }
 
      header{
-        height: auto;
-        padding: 10px 20px;
+        height: 120px;
+        padding: 10px 25px;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;    
+    }
+    header img{
+        width: 130px;
+        height: auto;
     }
     .logo{
         flex: none;

@@ -9,7 +9,6 @@ function changerSlide(numero) {
     points[index].classList.remove("active-point");
 
     index = numero;
-
     slides[index].classList.add("active");
     points[index].classList.add("active-point");
 }
@@ -41,6 +40,8 @@ setInterval(function() {
 }, 8000);
 
 
-function ouvrirMenu(){
-    document.querySelector("nav").classList.toggle("active");
-}
+const menuBtn= document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+menuBtn.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active")
+});
