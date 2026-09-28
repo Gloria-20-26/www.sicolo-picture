@@ -384,7 +384,7 @@ nav a.active{
         flex-direction: column;
     }
     nav.active {
-       display: none;
+       display: flex;
        flex-direction: column;
     }
     nav a{
@@ -407,6 +407,7 @@ nav a.active{
     .logo{
         flex: none;
         grid-row: span 2;
+        margin-top: 15px;
     }
     .logo img{
         position: relative;
