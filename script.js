@@ -40,8 +40,11 @@ setInterval(function() {
 }, 8000);
 
 
-const menuBtn= document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-menuBtn.addEventListener("click", function(){
-    mobileMenu.classList.toggle("active")
-});
+function ouvrirMenu(){
+    const menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    }else {
+        menu.style.display = "block";
+    }
+}

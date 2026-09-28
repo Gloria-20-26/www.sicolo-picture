@@ -356,9 +356,12 @@ nav a.active{
     opacity: 1;
 }
 .menu-btn{
+    background: #6a0dad;
+    color: white;
     display: none;
-    background: none;
-    border: none;
+    padding: 10px 14px;
+    font-size: 24px;
+    border-radius: 8px;
     cursor: pointer;
 }
 .menu-btn span{
@@ -368,13 +371,30 @@ nav a.active{
     background: white;
     margin: 5px 0;
 } 
-.mobile-menu{
+.menu{
     display: none;
-}  
-.mobile-menu.active{
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    width: 1800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+
 }
+.menu a{
+    display: block;
+    padding: 15px;
+    color: #6a0dad;
+    text-decoration: none;
+
+}
+.menu a:hover{
+    background: #f0e5f7;
+    
+}
+
 @media (max-width: 768px){
     html,body{
         overflow-x: hidden;
@@ -411,14 +431,14 @@ nav a.active{
     }
 
      header{
-        height: 120px;
-        padding: 10px 25px;
+        height: 110px;
+        padding: 9px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;    
     }
     header img{
-        width: 130px;
+        width: 100px;
         height: auto;
     }
     .logo{
@@ -844,6 +864,16 @@ body{
     text-decoration: none;
     
 }
+@media(max-width: 600px){
+    .offres{
+        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        width: 80px;
+        max-width: 1000px;
+    }
+
+}
+
 
 /*contact.html */
 
