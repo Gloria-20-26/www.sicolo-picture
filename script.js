@@ -38,13 +38,3 @@ setInterval(function() {
     changerSlide(suivant);
 
 }, 8000);
-
-
-function ouvrirMenu(){
-    const menu = document.getElementById("menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    }else {
-        menu.style.display = "block";
-    }
-}

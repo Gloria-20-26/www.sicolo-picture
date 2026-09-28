@@ -356,13 +356,10 @@ nav a.active{
     opacity: 1;
 }
 .menu-btn{
-    background: #6a0dad;
-    color: white;
     display: none;
-    padding: 10px 14px;
-    font-size: 24px;
-    border-radius: 8px;
+    border: none;
     cursor: pointer;
+    background: none;
 }
 .menu-btn span{
     display: block;
@@ -371,28 +368,8 @@ nav a.active{
     background: white;
     margin: 5px 0;
 } 
-.menu{
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    width: 1800px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    z-index: 1000;
-
-}
-.menu a{
-    display: block;
-    padding: 15px;
-    color: #6a0dad;
-    text-decoration: none;
-
-}
-.menu a:hover{
-    background: #f0e5f7;
-    
+#menu.ouvert{
+    display: flex;
 }
 
 @media (max-width: 768px){
@@ -404,8 +381,20 @@ nav a.active{
         padding: 0;
     }
     .menu-btn{
-        font-size: 35px;
-        margin: 0;
+       display: block;
+    }
+    #menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: white;
+        width: 200px;
+        z-index: 9999;
+    }
+    #menu.ouvert{
+        display: flex;
     }
     nav{
         display: none;
